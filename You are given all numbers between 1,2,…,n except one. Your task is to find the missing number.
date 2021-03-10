@@ -1,0 +1,11 @@
+import sys
+l1=list()
+i=int(input())
+l2=list(range(1,i+1))
+l1= list(map(int, input().split()))
+for i in l1:
+    l2[i-1]=0
+for i in l2:
+    if i!=0:
+        print(i)
+        sys.exit(0)
